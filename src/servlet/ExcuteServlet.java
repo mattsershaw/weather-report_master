@@ -27,7 +27,7 @@ public class ExcuteServlet extends HttpServlet {
 		try {
 			ow.main(account);
 		} catch(Exception e) {
-			msgForManag = "天気情報が取得できませんでした";
+			msgForManag = "LINEに送信できませんでした";
 		}
 		if (msgForManag == null) {
 			RequestDispatcher dispatcher = request.getRequestDispatcher("WEB-INF/jsp/management.jsp");

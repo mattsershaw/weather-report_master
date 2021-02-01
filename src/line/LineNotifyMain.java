@@ -30,7 +30,6 @@ public class LineNotifyMain {
                     String res = r.lines().collect(Collectors.joining());
                     if (!res.contains("\"message\":\"ok\"")) {
                         System.out.println(res);
-                        System.out.println("Failure..");
                     }
                 }
             }
@@ -39,18 +38,6 @@ public class LineNotifyMain {
             if (connection != null) {
                 connection.disconnect();
             }
-
-        //lineNotify.notify("\n今日の天気はテストです"); // ここにDBから値をとってきてトークン
-        //lineNotify.notify("Hope you got this message"); // 天気を追加
-        // リストを作ってそこにデータベースの中身を格納
-        // for文でまわす
-        // 送信テストです。<>エリアの今日の天気は<>、最高気温は<>度、最低気温は<>度です。今日も良い1日を！
-
         }
-
-
-
-
-
     }
 }
